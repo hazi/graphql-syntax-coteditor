@@ -1,16 +1,16 @@
 GraphQL syntax coloring for CotEditor
 ================
 
-![preview](preview.png)
+GraphQL Syntax coloring file for [CotEditor](https://coteditor.com/).
 
-Syntax coloring file for [CotEditor](https://coteditor.com/).
+![preview](preview.png)
 
 ## Install
 
 1. Download [latest release GraphQL.yml](https://github.com/hazi/graphql-syntax-coteditor/releases/latest/download/GraphQL.yml)
 2. Select the CotEditor menu `Preference...`
-3. Open the `Format` tab.
-4. Click the menu button in the `Available syntax styles` list and choose `Import...`.
+3. Open the `Format` tab
+4. Click the menu button in the `Available syntax styles` list and choose `Import...`
 5. Select the downloaded `GraphQL.yml` file
 ![Import](import.png)
 
@@ -32,7 +32,7 @@ $ ./normalizer
 
 The pre-executed file is saved as `GraphQL.yml.back` and the normalized file is saved as `GraphQL.yml`.
 
-Do not commit `GraphQL.yml.back`.
+Do not commit `GraphQL.yml.back` file.
 
 ## License
 
