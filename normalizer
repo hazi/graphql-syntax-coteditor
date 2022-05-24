@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+require "pathname"
+require "fileutils"
+require "yaml"
+
+def main
+  file = Pathname("GraphQL.yml")
+  FileUtils.cp file, "#{file}.back"
+
+  data = YAML.load_file(file)
+  data = sort(data)
+  yaml = YAML.dump(data)
+  yaml.sub!(/\A---\n/, "")
+
+  open(file, "w") { |io| io.puts(yaml) }
+end
+
+def sort(hash)
+  hash = hash.sort.to_h
+
+  hash["commands"] = hash["commands"].sort_by { |v| v.to_a.flatten }
+  hash["completions"] = hash["completions"].sort_by { |v| v.to_a.flatten }
+
+  hash
+end
+
+main

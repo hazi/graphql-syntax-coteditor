@@ -1,0 +1,30 @@
+# mutation
+mutation productPublish($input: ProductPublishInput!) {
+  productPublish(input: $input) {
+    product {
+      # Product fields
+    }
+    shop {
+      # Shop fields
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+
+# input
+{
+  "input": {
+    "id": "",
+    "productPublications": [
+      {
+        "channelHandle": "",
+        "channelId": "",
+        "publicationId": "",
+        "publishDate": ""
+      }
+    ]
+  }
+}
