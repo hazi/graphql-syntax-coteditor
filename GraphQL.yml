@@ -23,6 +23,7 @@ comments: []
 completions: []
 extensions:
 - keyString: graphql
+- keyString: gql
 filenames: []
 interpreters: []
 keywords:
