@@ -8,7 +8,7 @@ characters:
   description: JSON Key
   regularExpression: true
 commands:
-- beginString: '[-_a-z]+ *(?=\()'
+- beginString: "[-_a-z]+ *(?=\\()"
   description: Words in front of brackets
   ignoreCase: true
   regularExpression: true
@@ -18,7 +18,7 @@ commands:
 - beginString: query
 - beginString: type
 commentDelimiters:
-  inlineDelimiter: '#'
+  inlineDelimiter: "#"
 comments: []
 completions: []
 extensions:
@@ -26,7 +26,7 @@ extensions:
 filenames: []
 interpreters: []
 keywords:
-- beginString: '[a-z_-]+'
+- beginString: "[a-z_-]+"
   description: All words
   ignoreCase: true
   regularExpression: true
@@ -37,27 +37,27 @@ metadata:
   license: BSD 3-Clause License / Copyright (c) 2022, HAZI
   version: 0.1.0
 numbers:
-- beginString: '[0-9]+'
+- beginString: "[0-9]+"
   regularExpression: true
 outlineMenu:
-- beginString: '[a-z]+ *\(.+?\)'
+- beginString: "[a-z]+ *\\(.+?\\)"
   description: accept arguments
   ignoreCase: true
-- beginString: ^(#.+\n)(#.+\n)*
+- beginString: "^(#.+\\n)(#.+\\n)*"
   bold: true
   description: 'The first character of a line is #'
   ignoreCase: true
-  keyString: $1
+  keyString: "$1"
 strings:
-- beginString: '"'
-  endString: '"'
+- beginString: "\""
+  endString: "\""
 types:
-- beginString: '[a-z]+ *(?=\{)'
+- beginString: "[a-z]+ *(?=\\{)"
   description: Words before block
   ignoreCase: true
   regularExpression: true
 values: []
 variables:
-- beginString: \$[-_a-z]+
+- beginString: "\\$[-_a-z]+"
   ignoreCase: true
   regularExpression: true
