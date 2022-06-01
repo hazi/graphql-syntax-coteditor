@@ -34,9 +34,9 @@ keywords:
 metadata:
   author: HAZI
   distributionURL: https://github.com/hazi/graphql-syntax-coteditor
-  lastModified: 2022/05/24
+  lastModified: 2022/06/01
   license: BSD 3-Clause License / Copyright (c) 2022, HAZI
-  version: 0.1.0
+  version: 0.1.1
 numbers:
 - beginString: "[0-9]+"
   regularExpression: true
